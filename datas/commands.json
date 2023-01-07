@@ -1,0 +1,851 @@
+[
+    {
+        "url": "info",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_device_info",
+        "json_schema": null
+    },
+    {
+        "url": "app_version",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_app_version",
+        "json_schema": null
+    },
+    {
+        "url": "linux_version",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_linux_version",
+        "json_schema": null
+    },
+    {
+        "url": "status",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_device_status",
+        "json_schema": null
+    },
+    {
+        "url": "reboot",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "sys_reboot",
+        "json_schema": null
+    },
+    {
+        "url": "shutdown",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "sys_shutdown",
+        "json_schema": null
+    },
+    {
+        "url": "date_time",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_date_time",
+        "json_schema": {
+            "type": "object",
+            "properties": {
+                "date_time": {
+                    "type": "string",
+                    "format": "custom-date-time"
+                }
+            },
+            "required": [
+                "date_time"
+            ],
+            "additionalProperties": false
+        }
+    },
+    {
+        "url": "uptime",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_uptime",
+        "json_schema": null
+    },
+    {
+        "url": "setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_device_setting",
+        "json_schema": null
+    },
+    {
+        "url": "setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_device_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "auth_key_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_auth_key_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "card_reader_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_card_reader_setting",
+        "json_schema": null
+    },
+    {
+        "url": "card_reader_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_card_reader_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "network_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_network_setting",
+        "json_schema": null
+    },
+    {
+        "url": "network_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_network_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "server_communication_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_server_communication_setting",
+        "json_schema": null
+    },
+    {
+        "url": "server_communication_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_server_communication_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "output_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_output_setting",
+        "json_schema": null
+    },
+    {
+        "url": "output_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_output_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "capacity_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_capacity_setting",
+        "json_schema": null
+    },
+    {
+        "url": "capacity_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_capacity_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "verification_source_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_verification_source_setting",
+        "json_schema": null
+    },
+    {
+        "url": "verification_source_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_verification_source_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "application_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_application_setting",
+        "json_schema": null
+    },
+    {
+        "url": "application_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_application_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "time_zone",
+        "http_method": "get",
+        "method_type": "id",
+        "method_name": "get_time_zone",
+        "json_schema": null
+    },
+    {
+        "url": "time_zone",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_time_zone_all",
+        "json_schema": null
+    },
+    {
+        "url": "time_zone",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_time_zone",
+        "json_schema": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "time_zone",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_time_zone_all",
+        "json_schema": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    {
+        "url": "out_of_service",
+        "http_method": "get",
+        "method_type": "id",
+        "method_name": "get_out_of_service",
+        "json_schema": null
+    },
+    {
+        "url": "out_of_service",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_out_of_service_all",
+        "json_schema": null
+    },
+    {
+        "url": "out_of_service",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_out_of_service",
+        "json_schema": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "out_of_service",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_out_of_service_all",
+        "json_schema": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    {
+        "url": "bell",
+        "http_method": "get",
+        "method_type": "id",
+        "method_name": "get_bell",
+        "json_schema": null
+    },
+    {
+        "url": "bell",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_bell_all",
+        "json_schema": null
+    },
+    {
+        "url": "bell",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_bell",
+        "json_schema": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "bell",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_bell_all",
+        "json_schema": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    {
+        "url": "holiday",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_holiday_all",
+        "json_schema": null
+    },
+    {
+        "url": "holiday",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_holiday_all",
+        "json_schema": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    {
+        "url": "apb_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_apb_setting",
+        "json_schema": null
+    },
+    {
+        "url": "apb_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_apb_setting",
+        "json_schema": null
+    },
+    {
+        "url": "screen_message",
+        "http_method": "get",
+        "method_type": "id",
+        "method_name": "get_screen_message",
+        "json_schema": null
+    },
+    {
+        "url": "screen_message",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_screen_message_all",
+        "json_schema": null
+    },
+    {
+        "url": "screen_message",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_screen_message",
+        "json_schema": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "screen_message",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_screen_message_all",
+        "json_schema": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    {
+        "url": "user",
+        "http_method": "get",
+        "method_type": "id",
+        "method_name": "get_user",
+        "json_schema": null
+    },
+    {
+        "url": "user",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_user",
+        "json_schema": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "user",
+        "http_method": "delete",
+        "method_type": "id",
+        "method_name": "remove_user",
+        "json_schema": null
+    },
+    {
+        "url": "user",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_user_all",
+        "json_schema": null
+    },
+    {
+        "url": "user",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_user_all",
+        "json_schema": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    {
+        "url": "user",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_user_all",
+        "json_schema": null
+    },
+    {
+        "url": "face_reader_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_face_reader_setting",
+        "json_schema": null
+    },
+    {
+        "url": "face_reader_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_face_reader_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "fp_reader_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_fp_reader_setting",
+        "json_schema": null
+    },
+    {
+        "url": "fp_reader_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_fp_reader_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "qr_reader_setting",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_qr_reader_setting",
+        "json_schema": null
+    },
+    {
+        "url": "qr_reader_setting",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_qr_reader_setting",
+        "json_schema": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "time_zone",
+        "http_method": "delete",
+        "method_type": "id",
+        "method_name": "remove_time_zone",
+        "json_schema": null
+    },
+    {
+        "url": "time_zone",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_time_zone_all",
+        "json_schema": null
+    },
+    {
+        "url": "out_of_service",
+        "http_method": "delete",
+        "method_type": "id",
+        "method_name": "remove_out_of_service",
+        "json_schema": null
+    },
+    {
+        "url": "out_of_service",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_out_of_service_all",
+        "json_schema": null
+    },
+    {
+        "url": "bell",
+        "http_method": "delete",
+        "method_type": "id",
+        "method_name": "remove_bell",
+        "json_schema": null
+    },
+    {
+        "url": "bell",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_bell_all",
+        "json_schema": null
+    },
+    {
+        "url": "black_list",
+        "http_method": "get",
+        "method_type": "id",
+        "method_name": "get_black_list",
+        "json_schema": null
+    },
+    {
+        "url": "black_list",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_black_list_all",
+        "json_schema": null
+    },
+    {
+        "url": "black_list",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_black_list",
+        "json_schema": {
+            "type": "object",
+            "properties": {
+                "uniqueid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "uniqueid"
+            ],
+            "additionalProperties": true
+        }
+    },
+    {
+        "url": "black_list",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_black_list_all",
+        "json_schema": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "uniqueid": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "uniqueid"
+                ],
+                "additionalProperties": true
+            }
+        }
+    },
+    {
+        "url": "black_list",
+        "http_method": "delete",
+        "method_type": "id",
+        "method_name": "remove_black_list",
+        "json_schema": null
+    },
+    {
+        "url": "black_list",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_black_list_all",
+        "json_schema": null
+    },
+    {
+        "url": "black_list_count",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_black_list_count",
+        "json_schema": null
+    },
+    {
+        "url": "user_count",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_user_count",
+        "json_schema": null
+    },
+    {
+        "url": "user_list",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_user_list",
+        "json_schema": null
+    },
+    {
+        "url": "user_uniqueid",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_user_uniqueid",
+        "json_schema": null
+    },
+    {
+        "url": "user_uniqueid",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_user_uniqueid",
+        "json_schema": null
+    },
+    {
+        "url": "user_uniqueid",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_user_uniqueid",
+        "json_schema": null
+    },
+    {
+        "url": "user_uniqueid_all",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_user_uniqueid_all",
+        "json_schema": null
+    },
+    {
+        "url": "user_photo_profile",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_user_photo_profile",
+        "json_schema": null
+    },
+    {
+        "url": "user_photo_profile",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_user_photo_profile",
+        "json_schema": null
+    },
+    {
+        "url": "user_photo_profile",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_user_photo_profile",
+        "json_schema": null
+    },
+    {
+        "url": "user_time_zone",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_user_time_zone",
+        "json_schema": null
+    },
+    {
+        "url": "user_time_zone",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "set_user_time_zone",
+        "json_schema": null
+    },
+    {
+        "url": "user_time_zone_all",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_user_time_zone_all",
+        "json_schema": null
+    },
+    {
+        "url": "user_time_zone_all",
+        "http_method": "post",
+        "method_type": "all",
+        "method_name": "set_user_time_zone_all",
+        "json_schema": null
+    },
+    {
+        "url": "user_time_zone",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_user_time_zone",
+        "json_schema": null
+    },
+    {
+        "url": "user_time_zone_all",
+        "http_method": "delete",
+        "method_type": "all",
+        "method_name": "remove_user_time_zone_all",
+        "json_schema": null
+    },
+    {
+        "url": "get_trx",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "trx",
+        "json_schema": null
+    },
+    {
+        "url": "trx",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_trx",
+        "json_schema": null
+    },
+    {
+        "url": "trx_transfer",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "transfer_trx",
+        "json_schema": null
+    },
+    {
+        "url": "device_event",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "get_device_event",
+        "json_schema": null
+    },
+    {
+        "url": "device_event_transfer",
+        "http_method": "get",
+        "method_type": "all",
+        "method_name": "transfer_device_event",
+        "json_schema": null
+    },
+    {
+        "url": "enroll",
+        "http_method": "post",
+        "method_type": "id",
+        "method_name": "remote_enroll",
+        "json_schema": null
+    }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "screen_type": 2,
+    "default_screen_type": 1,
+    "line_1": {
+      "text": "test 1",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "line_2": {
+      "text": "test 2",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "line_3": {
+      "text": "test 3",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "footer": {
+      "text": "footer test",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "icon_id": "success.png",
+    "screen_duration": 40,
+    "infinite": false,
+    "tr_out_1_duration": 0,
+    "tr_out_2_duration": 0,
+    "rl_1_duration": 0,
+    "rl_2_duration": 0,
+    "sound_duration": 10,
+    "is_blink": true,
+    "audio_id": "success.wav",
+    "next_id": 100
+  },
+  {
+    "id": 2,
+    "screen_type": 3,
+    "default_screen_type": 1,
+    "line_1": {
+      "text": "Tanımsız",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "line_2": {
+      "text": "kart ",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "line_3": {
+      "text": "test 3",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "footer": {
+      "text": "footer test",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "icon_id": "undefined.png",
+    "screen_duration": 40,
+    "infinite": false,
+    "tr_out_1_duration": 0,
+    "tr_out_2_duration": 0,
+    "rl_1_duration": 0,
+    "rl_2_duration": 0,
+    "sound_duration": 10,
+    "is_blink": true,
+    "audio_id": "undefined.wav",
+    "next_id": 100
+  },
+  {
+    "id": 1,
+    "screen_type": 1,
+    "default_screen_type": 1,
+    "line_1": {
+      "text": "test 1",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "line_2": {
+      "text": "test 2",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "line_3": {
+      "text": "test 3",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "footer": {
+      "text": "footer test",
+      "font_name": "tt",
+      "font_color": "formata karar verelim",
+      "background_color": ""
+    },
+    "icon_id": "success.png",
+    "screen_duration": 40,
+    "infinite": true,
+    "tr_out_1_duration": 0,
+    "tr_out_2_duration": 0,
+    "rl_1_duration": 0,
+    "rl_2_duration": 0,
+    "sound_duration": 10,
+    "is_blink": true,
+    "audio_id": "success.wav",
+    "next_id": 100
+  }
+]
